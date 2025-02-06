@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="1,099.687" tests="16" skipped="0" failures="2" errors="0">
+<testcase classname="Verification Module" name="Verify the verfication module is present or not" time="122.728">
+<system-out><![CDATA[
+When Login in the healthapp application.....................................passed
+Given Scroll & click till "Verification" menu on the side bar...............passed
+Then Verify that the user is able to navigate to "Verification" section.....passed
+]]></system-out>
+</testcase>
+<testcase classname="Verification Module" name="Verify all sub-modules are displayed correctly after Clicking on the &quot;verification&quot; Module." time="35.177">
+<system-out><![CDATA[
+When Login in the healthapp application.....................................passed
+Given Scroll & click till "Verification" menu on the side bar...............passed
+Then Verify that the user is able to navigate to "Verification" section.....passed
+Then Verify that "Inventory" button is visible..............................passed
+Then Verify that "Pharmacy" button is visible...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verification Module" name="Verify the presence of Requisition tab in inventory section with all fields." time="52.055">
+<system-out><![CDATA[
+When Login in the healthapp application.....................................passed
+Given Scroll & click till "Verification" menu on the side bar...............passed
+Then Verify that the user is able to navigate to "Verification" section.....passed
+Then Verify that "Inventory" button is visible..............................passed
+Then Verify that "Pharmacy" button is visible...............................passed
+And Click on "Requisition" under "Inventory"................................passed
+Then Verify these elements are visible on the page Requisition, Purchase Request, Purchase Order, GR Quality Inspection, Ok, print, First, Previous, Next, Last, view, search bar, Requisition Status, Date range, Pending, Approved, Rejected.passed
+]]></system-out>
+</testcase>
+<testcase classname="Verification Module" name="Verify to navigate on another sub module after open the inventory module" time="45.772">
+<system-out><![CDATA[
+When Login in the healthapp application.....................................passed
+Given Scroll & click till "Verification" menu on the side bar...............passed
+Then Verify that the user is able to navigate to "Verification" section.....passed
+And Click on "Pharmacy" tab.................................................passed
+Then Verify that the user is able to navigate to "Verification/Pharmacy/" section.passed
+]]></system-out>
+</testcase>
+<testcase classname="Verification Module" name="Verify to navigate on another sub tab after open the Requisition tab" time="51.42">
+<system-out><![CDATA[
+When Login in the healthapp application.....................................passed
+Given Scroll & click till "Verification" menu on the side bar...............passed
+Then Verify that the user is able to navigate to "Verification" section.....passed
+And Click on "Purchase Order" under "Inventory".............................passed
+Then Verify that the user is able to navigate to "Verification/Inventory/PurchaseOrder" section.passed
+]]></system-out>
+</testcase>
+<testcase classname="Verification Module" name="Verify to search the data by picking the date filter" time="76.338">
+<system-out><![CDATA[
+When Login in the healthapp application.....................................passed
+Given Scroll & click till "Verification" menu on the side bar...............passed
+And Choose the date from Jan 2020 to March 2024.............................passed
+And Click on the "all" Radio button from List by Verification Status........passed
+And Click on OK button......................................................passed
+Then Verify that all the dates present inside the requested date are within the range.passed
+]]></system-out>
+</testcase>
+<testcase classname="Verification Module" name="Verify the tooltip and it's text present on hover the mouse on &quot;Star&quot;" time="39.848">
+<system-out><![CDATA[
+When Login in the healthapp application.....................................passed
+Given Scroll & click till "Verification" menu on the side bar...............passed
+Then Hover on the star and Verify tooltip text as "Remember this Date"......passed
+]]></system-out>
+</testcase>
+<testcase classname="Verification Module" name="Verify dates are remembered correclty" time="60.821">
+<system-out><![CDATA[
+When Login in the healthapp application.....................................passed
+Given Scroll & click till "Verification" menu on the side bar...............passed
+Then Verify that the user is able to navigate to "Verification" section.....passed
+And Choose the date from Jan 2020 to March 2024.............................passed
+And Click on tooltip button.................................................passed
+And Click on OK button......................................................passed
+And Click on "Pharmacy" tab.................................................passed
+And Click on "Inventory" tab................................................passed
+Then Verify that the date range remains the same............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verification Module" name="Verify data range by Select &quot;one week&quot; option from drop down" time="54.818">
+<system-out><![CDATA[
+When Login in the healthapp application.....................................passed
+Given Scroll & click till "Verification" menu on the side bar...............passed
+Then Verify that the user is able to navigate to "Verification" section.....passed
+And Select 'Last 3 Months' option from the date range dropdown..............passed
+And Click on OK button......................................................passed
+Then Verify that all the dates present inside the requested date are within the range.passed
+]]></system-out>
+</testcase>
+<testcase classname="Verification Module" name="Verify following radio buttons are selectable:Pending, Approved, Rejected &amp; All" time="48.345">
+<system-out><![CDATA[
+When Login in the healthapp application.....................................passed
+Given Scroll & click till "Verification" menu on the side bar...............passed
+Then Verify that the user is able to navigate to "Verification" section.....passed
+And Click on the "pending" Radio button from List by Verification Status....passed
+And Click on the "approved" Radio button from List by Verification Status...passed
+And Click on the "rejected" Radio button from List by Verification Status...passed
+And Click on the "all" Radio button from List by Verification Status........passed
+]]></system-out>
+</testcase>
+<testcase classname="Verification Module" name="Create and Verify a Purchase Request in Inventory" time="91.305">
+<system-out><![CDATA[
+When Login in the healthapp application.....................................passed
+Given Navigate to the Internal section under Inventory......................passed
+And Click on Purchase Request...............................................passed
+And Click on the Create Purchase Request button.............................passed
+And Fill in the required fields to create a Purchase Request................passed
+And Click on the Request button.............................................passed
+Then Verify that the Purchase Request has been successfully created.........passed
+]]></system-out>
+</testcase>
+<testcase classname="Verification Module" name="Verify Purchase Request in Verification Module" time="54.695">
+<system-out><![CDATA[
+When Login in the healthapp application.....................................passed
+Given Navigate to the "Inventory" section under Verification................passed
+And Click on Purchase Request...............................................passed
+Then Verify that the status of the Purchase Request is "Pending" in the list..passed
+]]></system-out>
+</testcase>
+<testcase classname="Verification Module" name="Approve the Purchase Request and Verify Status" time="70.548">
+<system-out><![CDATA[
+When Login in the healthapp application.....................................passed
+Given Navigate to the "Inventory" section under Verification................passed
+And Click on Purchase Request...............................................passed
+When Click on the View button under the action column for the Purchase Request..passed
+And Approve the Purchase Request............................................passed
+Then Verify the success message confirming the approval.....................passed
+And Click on the Approved radio button......................................passed
+Then Verify that the status of the Purchase Request has changed to Approved..passed
+]]></system-out>
+</testcase>
+<testcase classname="Verification Module" name="Verify Reject All button without filling remark field" time="77.102">
+<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//div[@col-id='VerificationStatus' and text()='pending']/../div/a[@danphe-grid-action='view'])[1]&quot;}
+  (Session info: chrome=132.0.6834.160)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.5', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bd7fd00b56f651d78f821405ee273cb4, findElement {using=xpath, value=(//div[@col-id='VerificationStatus' and text()='pending']/../div/a[@danphe-grid-action='view'])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.160, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: /var/folders/5y/7c_nbpk94jg...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61385}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:61385/devtoo..., se:cdpVersion: 132.0.6834.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bd7fd00b56f651d78f821405ee273cb4">
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//div[@col-id='VerificationStatus' and text()='pending']/../div/a[@danphe-grid-action='view'])[1]"}
+  (Session info: chrome=132.0.6834.160)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.5', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bd7fd00b56f651d78f821405ee273cb4, findElement {using=xpath, value=(//div[@col-id='VerificationStatus' and text()='pending']/../div/a[@danphe-grid-action='view'])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.160, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: /var/folders/5y/7c_nbpk94jg...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61385}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:61385/devtoo..., se:cdpVersion: 132.0.6834.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bd7fd00b56f651d78f821405ee273cb4
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at coreUtilities.utils.CommonEvents.findElement(CommonEvents.java:142)
+	at pages.VerificationPage_PL2.clickOnViewRequestWithStatusPending(VerificationPage_PL2.java:327)
+	at steps.VerificationStep_PL2.click_on_the_view_button_under_the_action_column_for_the_purchase_request(VerificationStep_PL2.java:157)
+	at ✽.Click on the View button under the action column for the Purchase Request.(file:///Users/abhisheksharma/Documents/YAKSHA/Clients/Cognizant/Cucumber/Java-Cucumber-Comments/VM-Java-Health-App-Dispensary-Automation-L1-Selenium_Excel-Template-main/src/test/java/features/Verification_PL2.feature:116)
+]]>
+</failure>
+<system-out><![CDATA[
+When Login in the healthapp application.....................................passed
+Given Navigate to the "Inventory" section under Verification................passed
+And Click on Purchase Request...............................................passed
+When Click on the View button under the action column for the Purchase Request..failed
+And Click on Reject All button..............................................skipped
+Then Verify a popup message should appear stating Remarks is compulsory for cancellation..skipped
+]]></system-out>
+</testcase>
+<testcase classname="Verification Module" name="Reject the Approved Purchase Request and Verify Status" time="101.536">
+<failure type="org.openqa.selenium.TimeoutException" message="timeout: Timed out receiving message from renderer: 90.000
+  (Session info: chrome=132.0.6834.160)
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.5', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8096910fa47177e120fe5fb993d5d15f, clickElement {id=f.C1EDC34749E61B046B05A89B2A33C7CD.d.DA83B6EC872B003B44DF6BE3C1B2563C.e.12}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.160, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: /var/folders/5y/7c_nbpk94jg...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61426}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:61426/devtoo..., se:cdpVersion: 132.0.6834.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (8096910fa47177e120fe5fb993d5d15f)] -&gt; css selector: #login]
+Session ID: 8096910fa47177e120fe5fb993d5d15f">
+<![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 90.000
+  (Session info: chrome=132.0.6834.160)
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.5', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8096910fa47177e120fe5fb993d5d15f, clickElement {id=f.C1EDC34749E61B046B05A89B2A33C7CD.d.DA83B6EC872B003B44DF6BE3C1B2563C.e.12}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.160, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: /var/folders/5y/7c_nbpk94jg...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61426}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:61426/devtoo..., se:cdpVersion: 132.0.6834.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (8096910fa47177e120fe5fb993d5d15f)] -> css selector: #login]
+Session ID: 8096910fa47177e120fe5fb993d5d15f
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:242)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at pages.VerificationPage_PL2.login(VerificationPage_PL2.java:140)
+	at steps.VerificationStep_PL2.login_in_the_healthapp_application(VerificationStep_PL2.java:32)
+	at ✽.Login in the healthapp application(file:///Users/abhisheksharma/Documents/YAKSHA/Clients/Cognizant/Cucumber/Java-Cucumber-Comments/VM-Java-Health-App-Dispensary-Automation-L1-Selenium_Excel-Template-main/src/test/java/features/Verification_PL2.feature:4)
+]]>
+</failure>
+<system-out><![CDATA[
+When Login in the healthapp application.....................................failed
+Given Navigate to the "Inventory" section under Verification................skipped
+And Click on Purchase Request...............................................skipped
+And Click on the Approved radio button......................................skipped
+When Click on the View button under the action column with status approved for the Purchase Request..skipped
+And Click on Reject All button with remarks.................................skipped
+And Click on the Rejected radio button......................................skipped
+Then Verify that the status of the Purchase Request has changed to Rejected..skipped
+]]></system-out>
+</testcase>
+<testcase classname="Verification Module" name="Take Screenshot of the current page" time="54.576">
+<system-out><![CDATA[
+When Login in the healthapp application.....................................passed
+Given Navigate to the "Inventory" section under Verification................passed
+And Click on Purchase Request...............................................passed
+Then Take screenshot of the current page....................................passed
+]]></system-out>
+</testcase>
+</testsuite>
