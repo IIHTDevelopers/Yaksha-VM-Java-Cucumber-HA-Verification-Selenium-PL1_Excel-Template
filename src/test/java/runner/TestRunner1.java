@@ -29,6 +29,12 @@ public class TestRunner1 extends AbstractTestNGCucumberTests {
 		configData.put("browser", "chrome");
 		testbase.initialize(configData);
 	}
+	@Before
+    	public void beforeScenario(Scenario scenario) {
+        String scenarioName = scenario.getName();
+        ITestResult testResult = Reporter.getCurrentTestResult(); // Get the current test result from TestNG
+        testResult.setAttribute("scenarioName", scenarioName);
+    }
 
 	@After(order = 0)
 	public void tearDown() {
